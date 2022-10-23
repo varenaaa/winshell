@@ -509,7 +509,7 @@ class Fud():
     def generate_random_variable(self):
         random_var = ''
 
-        for x in range(0, 12):
+        for x in range(0, random.randint(7,15)):
             random_var += self.chars[random.randint(0, len(self.chars) - 1)]
 
         return random_var
