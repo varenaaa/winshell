@@ -6,7 +6,6 @@ import ssl, sys, argparse, base64, readline, uuid, re
 from os import system, path
 from warnings import filterwarnings
 from datetime import date, datetime
-from IPython.display import display
 from threading import Thread, Event
 from time import sleep
 from ipaddress import ip_address
@@ -657,7 +656,7 @@ def main():
             payload = source.read().strip()
             source.close()
 
-            fud = FUD()
+            fud = Fud()
 
             generic_server_variable = fud.generate_random_variable()
             generic_session_variable = fud.generate_random_variable()
